@@ -2,6 +2,11 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 import React from "react";
 
 export default function Intro() {
+
+  const soon = () => {
+    window.alert("Coming Soon")
+  }
+
   return (
     <div className="intro">
       <Container className="text-white d-flex justify-content-center align-items-lg-center text-center ">
@@ -10,7 +15,7 @@ export default function Intro() {
             <div className="title">NONTON GRATIS</div>
             <div className="title">GA PAKE KARCIS</div>
             <div className="introButton mt-4 text-center">
-              <Button className="btn btn-dark" href="/">
+              <Button className="btn btn-dark" onClick={soon}>
                 Lihat Semua List
               </Button>
             </div>
